@@ -8,7 +8,8 @@
 
 import Mock from 'mockjs2';
 import { get, post } from '../request.js';
-const storeHostPrefix = 'http://n.huasen.cc/huasen-store';
+// const storeHostPrefix = 'http://n.huasen.cc/huasen-store';
+const storeHostPrefix = '/huasen-store';
 const findSiteByCode = post('/site/findByCode', [
   {
     expand: '{}',

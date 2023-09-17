@@ -150,7 +150,8 @@ module.exports = {
         pathRewrite: { '^/dev': '' },
       },
       '^/huasen-store': {
-        target: 'http://n.huasen.cc',
+        // target: 'http://n.huasen.cc',
+        target: 'http://localhost:3000',
       },
     },
   },
