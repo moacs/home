@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "sync": "python3 ./scripts/syncStore.py"
+    "sync": "python3 ./scripts/syncStore.py",
+    "deploy": "bash ./scripts/deploy.sh"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
