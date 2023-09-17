@@ -7,18 +7,18 @@
  */
 const searchs = [
   {
-    url: 'https://www.baidu.com/s',
-    key: 'word',
-    params: {},
-    name: '百度',
-    iconClass: 'iconfont icon-baidu',
-  },
-  {
     url: 'https://www.google.com/search',
     key: 'q',
     params: {},
     name: '谷歌',
     iconClass: 'iconfont icon-chrome',
+  },
+  {
+    url: 'https://www.baidu.com/s',
+    key: 'word',
+    params: {},
+    name: '百度',
+    iconClass: 'iconfont icon-baidu',
   },
   {
     url: 'https://cn.bing.com/search',
