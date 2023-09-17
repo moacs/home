@@ -4,15 +4,19 @@ import requests
 def downIcon(path,targetPath):
     # 创建一个名为icons的目录
     os.makedirs(targetPath, exist_ok=True)
+    icon_path =f"{targetPath}/{path}"
+    directory, filename = os.path.split(icon_path)
+    os.makedirs(directory, exist_ok=True)
+
+    if os.path.exists(icon_path):
+        return
+
+    print(f"Icon {path} 开始下载")
     url = "http://n.huasen.cc/"+path
     # 下载并保存icon
     response = requests.get(url)
     if response.status_code == 200:
-        print(f"Icon {path} 开始下载")
-        icon_path =f"{targetPath}/{path}"
-        directory, filename = os.path.split(icon_path)
         # 根据目录创建文件夹
-        os.makedirs(directory, exist_ok=True)
         with open(icon_path, "wb") as f:
             f.write(response.content)
     else:
@@ -33,6 +37,8 @@ data = {"_id": "641881fa39ede6001dacb8b9"}
 response = requests.post(url, json=data)
 
 if response.status_code == 200:
+    with open("src/config/default.subscribe.json", "wb") as f:
+        f.write(response.content)
     downIcons(response.json())
 else:
     print("请求失败，状态码:", response.status_code)
