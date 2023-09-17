@@ -150,7 +150,8 @@ module.exports = {
         pathRewrite: { '^/dev': '' },
       },
       '^/huasen-store': {
-        target: 'http://localhost:3000',
+        // http://n.huasen.cc/huasen-store/icon/1688687947488.png
+        target: 'http://n.huasen.cc',
       },
     },
   },

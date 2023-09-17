@@ -17,8 +17,8 @@ import TOOL from '@/utils/index.js';
 import unloadImg from '@/assets/img/error/image-error.png';
 import loadImg from '@/assets/img/loading/3.gif';
 
-import hljs from 'highlight.js';
-import 'highlight.js/styles/default.css';
+// import hljs from 'highlight.js';
+// import 'highlight.js/styles/default.css';
 
 // 图片标签懒加载
 Vue.directive('lazy', {
@@ -129,13 +129,13 @@ function handleRightMenuShadow(focusClassName) {
   }
 }
 
-// markdown代码高亮
-Vue.directive('highlight', function(el) {
-  let blocks = el.querySelectorAll('pre code');
-  blocks.forEach(block => {
-    hljs.highlightBlock(block);
-  });
-});
+// // markdown代码高亮
+// Vue.directive('highlight', function(el) {
+//   let blocks = el.querySelectorAll('pre code');
+//   blocks.forEach(block => {
+//     hljs.highlightBlock(block);
+//   });
+// });
 
 // 自动获取焦点指令
 Vue.directive('focus', {
