@@ -1,4 +1,7 @@
+mv home/.git dist/.git
+rm -r home
+mv dist home
+# find ./home/* -maxdepth 1  | grep -v "\(.git\)" 
 # find ./home/* -maxdepth 1  | grep -v "\(.git\)" | xargs rm -rf "{}"
-find ./home/* -maxdepth 1  | grep -v "\(.git\)" | xargs rm -rf "{}"
-cp -arf ./dist/* ./home/* 
+# cp -af ./dist/* ./home/
 
