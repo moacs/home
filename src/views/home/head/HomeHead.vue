@@ -15,11 +15,11 @@
       'gross-glass': showGrossGlass || headBgConfig.grossGlass,
     }"
   >
-    <section class="fold" @click="hiddenWrapLeft">
+    <!-- <section class="fold" @click="hiddenWrapLeft">
       <i class="iconfont icon-md-barcode"></i>
     </section>
     <section class="menu" @click="hiddenMenu">
-      <i class="iconfont  icon-md-menu"></i>
+      <i class="iconfont icon-md-menu"></i>
     </section>
     <section v-if="showMenu" class="collapse">
       <ul class="links">
@@ -28,7 +28,7 @@
           <span class="text">{{ item.text }}</span>
         </li>
       </ul>
-    </section>
+    </section> -->
     <section class="today">
       <div class="clock-group">
         <Clock></Clock>
@@ -50,9 +50,9 @@
         </el-dropdown-menu>
       </el-dropdown>
     </section>
-    <section v-if="showMenu" @click="sign" class="sign">
+    <!-- <section v-if="showMenu" @click="sign" class="sign">
       {{ signText || '花酱大人' }}
-    </section>
+    </section> -->
   </div>
 </template>
 <script>

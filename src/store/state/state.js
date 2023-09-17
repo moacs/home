@@ -35,7 +35,7 @@ export default {
   // 选中订阅源的站点
   categorySites: [],
   // 侧栏折叠
-  showWrapLeft: true,
+  showWrapLeft: false,
   showWrapSidebar: true,
   showWrapSidebarSocket: false,
   showWrapConnect: false,
